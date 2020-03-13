@@ -3,17 +3,15 @@
 */
 
 @font-face {
-    font-family: "Inter Web";
-    font-weight: 400;
-    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-family: 'Inter Web';
+  font-weight: 400;
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
 }
 @font-face {
-    font-family: "Inter Web";
-    font-weight: 700;
-    src: url("../fonts/Inter-Black.woff2") format("woff2");
+  font-family: 'Inter Web';
+  font-weight: 700;
+  src: url('../fonts/Inter-Black.woff2') format('woff2');
 }
-
-
 
 /*
     Elements: Page
@@ -25,7 +23,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   /*font-family: "Inter Web", 'Helvetica Neue', Helvetica, arial, sans-serif;*/
-  font-family: "droid-serif", Georgia, serif;
+  font-family: 'droid-serif', Georgia, serif;
   color: #5c6366;
   padding: 48px 24px 24px;
   -webkit-font-smoothing: antialiased;
@@ -69,13 +67,12 @@ img {
 
 h1 {
   color: #000000;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
   margin: 0 0 24px;
 }
-
 
 h2 {
   color: #000000;
@@ -84,12 +81,12 @@ h2 {
   margin: 0 0 24px;
 }
 
-*+h2 {
-    margin-top: 48px;
+* + h2 {
+  margin-top: 48px;
 }
 
 h3 {
-  font-family: "Inter Web", 'Helvetica Neue', Helvetica, arial, sans-serif;
+  font-family: 'Inter Web', 'Helvetica Neue', Helvetica, arial, sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 24px;
@@ -164,6 +161,37 @@ a:active {
 a:hover,
 a:focus {
   color: #1abaff;
+}
+/*
+    components: Author
+*/
+.c-author {
+  display: flex;
+  align-items: center;
+}
+.c-author__image {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.c-author__name,
+.c-author__meta {
+  margin-bottom: 0;
+}
+.c-author__meta {
+    font-size: 14px;
+    font-family: "Inter", "Helvetica Neue",  Helvetica, arial, sans-serif;
+    line-height: 24px;
+}
+.c-author__name {
+    font-size: 16px;
+    line-height: 24px;
+}
+.c-author__image {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin-right: 16px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
